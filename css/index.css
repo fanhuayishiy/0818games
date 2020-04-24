@@ -1,0 +1,1149 @@
+
+@charset "utf-8";
+/* CSS Document */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img{
+	margin:0;padding:0;
+}
+fieldset, img{border:none;display: block;}
+strong,b,h1,h2,h3,h4,h5,h6{font-weight:100;}
+ul,ol{list-style:none;}
+body { color:#333; font:12px/20px "微软雅黑","SimSun","Arial Narrow",HELVETICA; background:#fff;}
+a { color:#fff;  text-decoration: none;}
+a:hover{text-decoration:underline;}
+input{outline:none;}
+.clear:after{content:".";clear:both; display:block; height:0; overflow:hidden;}
+
+.box{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+}
+
+/* header头部 */
+header{
+	width: 100%;
+	height: 142px;
+	background: url(../images/head-bg.png) repeat-x;
+}
+.header{
+	background: url(../images/head.png) no-repeat;
+	position: relative;
+}
+.logo{
+	float: left;
+}
+.logo h1{
+	margin-top: 24px;
+	width: 280px;
+	height: 100px;
+	background: url(../images/logo.png) no-repeat;
+}
+.logo h1 a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-indent: -999px;
+}
+
+.nav{
+	float: right;
+}
+.nav .nav-list{
+	margin-top: 98px;
+}
+.nav .nav-list li{
+	padding: 0 12px;
+	font-size: 12px;
+	line-height: 12px;
+	height: 12px;
+	float: left;
+	border-right: 1px dashed #fff;
+}
+.nav .nav-list li:nth-last-of-type(1){
+	border-right:none;
+}
+
+.header .setting{
+	position: absolute;
+	top: 10px;
+	right: 0;
+}
+.setting a{
+	color: #87cefa;
+	line-height: 11px;
+	font-size: 11px;
+	padding: 0 8px;
+}
+.setting a:nth-of-type(1){
+	border-right: 1px dashed #87cefa;
+}
+
+
+/* 底部 */
+footer{
+	width: 100%;
+	height: 127px;
+	background: url(../images/foot_bg.png) repeat-x;
+}
+.footer{
+	padding-top:20px;
+	box-sizing: border-box;
+}
+.footer .copyRight{
+	text-align: center;
+}
+.footer .copyRight img{
+	display: inline-block;
+	width: 124px;
+	height: 47px;
+	margin-left: 24px;
+}
+.footer p{
+	text-align: center;
+	color: #d2b48c;
+	font-size: 12px;
+}
+
+/* banner图 */
+
+#banner-wrapper{
+	width: 100%;
+}
+.swiper-slide img{
+	width: 100%;
+}
+.swiper-button-prev,.swiper-button-next{
+	display: none;
+	width: 70px;
+	height: 70px;
+}
+
+.swiper-button-prev{
+	background: url(../images/lunboAd_ctr.png) no-repeat 0 0;
+}
+.swiper-button-next{
+	background: url(../images/lunboAd_ctr.png) no-repeat 0 -70px;
+}
+
+.swiper-pagination-bullet{
+	width: 10px;
+	height: 10px;
+	background: #154770;
+}
+.swiper-pagination-bullet-active{
+	background: #22a9ff;
+}
+
+.swiper-container:hover .swiper-button-prev,.swiper-container:hover .swiper-button-next{
+	display: block;
+}
+
+/* mian内容 */
+#main-wrapper{
+	width: 100%;
+	background: #041828;
+}
+.notice{
+	width: 100%;
+	height: 45px;
+	background: url(../images/notice.png) no-repeat;
+}
+.notice marquee{
+	margin-left: 70px;
+	line-height: 45px;
+	font-size: 16px;
+	color: #fff;
+}
+.notice marquee:hover{
+	text-decoration: underline;
+}
+
+.content{
+	width: 100%;
+	height: 503px;
+	background: url(../images/card_up.png) repeat-x;
+	padding: 18px 15px 0 15px;
+	box-sizing: border-box;
+}
+.contentL{
+	width: 280px;
+	height: 471px;
+	float: left;
+}
+.contentL .contentLTop{
+	width: 258px;
+	height: 229px;
+	background: url(../images/card01.png) no-repeat;
+	position: relative;
+}
+.contentLTop a{
+	display: block;
+	width: 108px;
+	height: 41px;
+	background: url(../images/btn02.png) no-repeat;
+	background-size: 100%;
+	text-align: center;
+	line-height: 33px;
+	font-size: 12px;
+	position: absolute;
+	top: 165px;
+}
+.contentLTop a:nth-of-type(1){
+	left: 21px;
+}
+.contentLTop a:nth-of-type(2){
+	left: 134px;
+}
+.contentLTop a:hover{
+	text-decoration: none;
+	background: url(../images/btn02_hover.png) no-repeat;
+}
+
+.contentL .contentLBottom{
+	width: 258px;
+	height: 229px;
+	background: url(../images/card03.png) no-repeat;
+	position: relative;
+	margin-top: 13px;
+}
+.contentLBottom a{
+	display: block;
+	width: 131px;
+	height: 41px;
+	background: url(../images/btn06.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 135px;
+	left: 12px;
+}
+.contentLBottom a:hover{
+	text-decoration: none;
+	background: url(../images/btn06_hover.png) no-repeat;
+}
+
+.contentR{
+	float: left;
+	width: 690px;
+	height: 473px;
+	background: url(../images/card02.png) no-repeat;
+}
+.contentR .more{
+	display: block;
+	text-align: right;
+	font-size: 14px;
+	line-height: 14px;
+	margin: 26px 36px 19px 0;
+}
+.contentR ul{
+	width: 656px;
+	margin-left: 17px;
+}
+.contentR ul li{
+	height: 40px;
+	font-size: 14px;
+	color: #fff;
+	line-height: 40px;
+	text-indent: 20px;
+	border-top: 1px dashed #2659b0;
+	position: relative;
+}
+.contentR ul li::before{
+	content: '';
+	display: block;
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	background: #fff;
+	border-radius: 50%;
+	left: 5px;
+	top: 18px;
+}
+.contentR ul li:nth-of-type(1){
+	border-top: none;
+}
+.contentR ul li span{
+	float: right;
+	margin-right: 21px;
+}
+
+/* games游戏 */
+.games{
+	width: 100%;
+	height: 303px;
+	background: url(../images/card_down.png) no-repeat;
+	box-sizing: border-box;
+	padding-top: 17px;
+}
+.gamesList{
+	width: 100%;
+	height: 271px;
+	position: relative;
+	overflow: hidden;
+}
+.gamesList ul{
+	width: 1980px;
+	height: 271px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+}
+.gamesList ul li{
+	float: left;
+	margin-left: 10px;
+	width: 188px;
+	height: 271px;
+}
+.gamesList ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	
+}
+.gamesList .a1{
+	background: url(../images/card_new01.png) no-repeat;
+}
+.gamesList .a2{
+	background: url(../images/card_new02.png) no-repeat;
+}
+.gamesList .a3{
+	background: url(../images/card_new03.png) no-repeat;
+}
+.gamesList .a4{
+	background: url(../images/card_new04.png) no-repeat;
+}
+.gamesList .a5{
+	background: url(../images/card_new05.png) no-repeat;
+}
+.gamesList ul li a:hover{
+	background-position-y: -271px;
+}
+
+
+/******************* news ****************************/
+/* 多页面使用 */
+.pic{
+	width: 100%;
+	height: 318px;
+	background: url(../images/pic03.png) no-repeat center;
+}
+.newsContent{
+	width: 100%;
+	height: 362px;
+	background: url(../images/content_bg.png) repeat-y;
+	margin-top: 30px;
+	position: relative;
+}
+.newsContent::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	left: 0;
+	top: -5px;
+	background: url(../images/content_head.png);
+}
+
+.newsCLeft{
+	width: 258px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 15px;
+	position: relative;
+}
+.newsCLeft::after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 10px;
+	left: 0;
+	bottom: -10px;
+	background: url(../images/left_menu_bottom.png);
+}
+.newsCLeft .menuItem{
+	width: 100%;
+	background: url(../images/left_menu_body.png) repeat-y;
+	padding-left: 24px;
+	padding-right: 26px;
+	box-sizing: border-box;
+}
+.menuItem h3{
+	width: 200px;
+	height: 36px;
+	background: url(../images/menu_hover.png) no-repeat;
+	background-size: 100% ;
+	text-indent: 27px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 32px;
+	font-weight: bold;
+}
+.menuItem li{
+	width: 184px;
+	height: 31px;
+	margin-left: 13px;
+	border-bottom: 1px solid #2659b0;
+	box-sizing: border-box;
+}
+.menuItem li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #2659b0;
+	font-size: 12px;
+	line-height: 30px;
+	text-indent: 9px;
+	position: relative;
+}
+.newsContent a:hover{
+	text-decoration: none;
+}
+.menuItem li a::before{
+	content: "";
+	position: absolute;
+	width: 3px;
+	height: 3px;
+	left: 0;
+	top: 15px;
+	background: #2659b0;
+	border-radius: 50%;
+}
+
+.newsCRight{
+	margin-top: 40px;
+	margin-left: 12px;
+	float: left;
+	width: 700px;
+	height: 292px;
+	background: #05153c;
+	padding: 15px 10px 0 10px;
+	box-sizing: border-box;
+}
+.newsCRight h4{
+	width: 680px;
+	height: 30px;
+	background: #000030;
+	font-size: 14px;
+	line-height: 30px;
+	color: #fff;
+	text-indent: 19px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+.newsCRight li{
+	width: 680px;
+	height: 30px;
+	border-bottom: 1px solid #062545;
+	text-indent: 12px;
+}
+.newsCRight li:nth-last-of-type(1){
+	border-bottom: 1px solid #fff;
+}
+.newsCRight li:hover{
+	background: #062545;
+}
+.newsCRight li a{
+	width: 100%;
+	height: 100%;
+	font-size: 13px;
+	line-height: 30px;
+}
+.newsCRight li span{
+	font-size: 13px;
+	line-height: 30px;
+	float: right;
+	color: #fff;
+	margin-right: 11px;
+}
+
+.newsPage{
+	text-indent: 10px;
+	line-height: 37px;
+	color: #fff;
+}
+.newsPage span{
+	color: #185273;
+}
+.newsPage a{
+	margin-right: 15px;
+	transition: ease-in-out .3s
+}    
+.newsPage a:hover{
+	color: #205286;
+}
+
+/* game游戏介绍 */
+.gamesContent{
+	width: 1000px;
+	background: url(../images/game_body.jpg) repeat-y;
+	margin-top: 102px;
+	position: relative;
+	padding-bottom: 10px;
+}
+.gamesContent::before{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 75px;
+	position: absolute;
+	top: -75px;
+	left: 0;
+	background: url(../images/game_title02.jpg) no-repeat;
+}
+.gamesContent::after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 10px;
+	position: absolute;
+	bottom: -px;
+	left: 0;
+	background: url(../images/game_bottom.jpg) no-repeat;
+}
+.gamesContent ul{
+	width: 980px;
+	margin-left: 20px;
+}
+.gamesContent ul li{
+	width: 308px;
+	height: 189px;
+	margin: 6px;
+	float: left;
+	background: url(../images/game_frame.png) no-repeat;
+	padding: 13px 15px 0 10px;
+	box-sizing: border-box;
+}
+.gamesContent .gamesImg{
+	float: left;
+}
+.gamesImg img{
+	width: 124px;
+	height: 124px;
+}
+.gamesImg h4{
+	margin-top: 10px;
+	width: 123px;
+	height: 33px;
+	font-size: 14px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	line-height: 24px;
+	background: url(../images/game_btn01.png);
+}
+.gamesContent .gamesDownload{
+	float: left;
+	width: 145px;
+	margin-left: 14px;
+	padding-top: 6px;
+	
+}
+.gamesDownload p{
+	color: #fff;
+	font-size: 12px;
+	line-height: 17px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 7;
+	-webkit-box-orient: vertical;
+}
+.gamesDownload a{
+	margin-top: 11px;
+	display: inline-block;
+	width: 71px;
+	height: 26px;
+	transition: ease-in-out 0.3s;
+}
+.gamesDownload .download{
+	float: left;
+	background: url(../images/btn03.png) no-repeat;
+}
+.gamesDownload .download:hover{
+	background: url(../images/btn03_hover.png) no-repeat;
+}
+.gamesDownload .introduce{
+	float: right;
+	background: url(../images/btn04.png) no-repeat;
+}
+.gamesDownload .introduce:hover{
+	background: url(../images/btn04_hover.png) no-repeat;
+}
+
+/* member会员中心 */
+
+.ListContent{
+	width: 100%;
+	background: url(../images/content_bg.png) repeat-y;
+	margin-top: 30px;
+	position: relative;
+	padding-bottom: 12px;
+}
+.ListContent::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	left: 0;
+	top: -5px;
+	background: url(../images/content_head.png);
+}
+
+.ListContentL{
+	width: 258px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 15px;
+	position: relative;
+}
+.ListContentL::after{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 10px;
+	left: 0;
+	bottom: -10px;
+	background: url(../images/left_menu_bottom.png);
+}
+.ListContentL .ListContentLSide{
+	width: 100%;
+	background: url(../images/left_menu_body.png) repeat-y;
+	padding-left: 24px;
+	padding-right: 26px;
+	box-sizing: border-box;
+}
+
+.ListContentLSide h3{
+	width: 200px;
+	height: 36px;
+	background: url(../images/menu_item.png) no-repeat;
+	background-size: 100% ;
+	text-indent: 27px;
+	color: #fff;
+	font-size: 14px;
+	line-height: 32px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 7px;
+	cursor: pointer;
+}
+.ListContentLSide h3.on{
+	background: url(../images/menu_hover.png) no-repeat;
+	background-size: 100% ;
+}
+.ListContentLSide li{
+	width: 184px;
+	height: 31px;
+	margin-left: 13px;
+	border-bottom: 1px solid #2659b0;
+	box-sizing: border-box;
+}
+.ListContentLSide li.on a{
+	color: #2659b0;
+}
+.ListContentLSide li.on a::before{
+	background: #2659b0;
+}
+.ListContentLSide li:hover a{
+	color: #2659b0;
+}
+.ListContentLSide li:hover a::before{
+	background: #2659b0;
+}
+.ListContentLSide li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	font-size: 12px;
+	line-height: 30px;
+	text-indent: 9px;
+	position: relative;
+}
+.ListContent a:hover{
+	text-decoration: none;
+}
+.ListContentLSide li a::before{
+	content: "";
+	position: absolute;
+	width: 3px;
+	height: 3px;
+	left: 0;
+	top: 15px;
+	background: #fff;
+	border-radius: 50%;
+}
+.ListContentR{
+	float: left;
+	padding: 55px 13px 0 12px;
+}
+.ListContentR>div.ListContentRShow{
+	display: block;
+	width: 700px;
+	background: #05153c;
+	padding-top: 15px;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.ListContentR>div>h4{
+	width: 680px;
+	height: 30px;
+	background: #000030;
+	line-height: 30px;
+	font-size: 16px;
+	color: #fff;
+	text-indent: 19px;
+}
+.ListContentR>div li{
+	width: 50%;
+	font-size: 12px;
+	text-align: end;
+	color: #fff;
+	margin-top: 6px;
+	margin-bottom: 15px;
+}
+.ListContentR>div.member1 li{
+	text-align: start;
+	text-indent: 90px;
+	width: 100%;
+	font-size: 12px;
+	color: #fff;
+	margin-top: 6px;
+	margin-bottom: 15px;
+}
+.ListContentR>div.member1 li>span{
+	font-size: 14px;
+	color: #e3c388;
+}
+.ListContentR>div>a{
+	display: block;
+	font-size: 12px;
+	line-height: 16px;
+	width: 226px;
+	height: 129px;
+	float: left;
+	padding: 25px 29px 0 23px;
+	box-sizing: border-box;
+}
+.ListContentR>div>a>img{
+	float: left;
+	margin-right: 9px;
+}
+.ListContentR>div>a>span{
+	font-size: 14px;
+	line-height: 20px;
+	color: #f2cf93;
+	display: block;
+	margin-bottom: 3px;
+}
+.ListContentR ul.inputItem{
+	margin-top: 18px;
+}
+.ListContentR ul.inputItem li{
+	width: 50%;
+	text-align: end;
+}
+.ListContentR ul.inputItem li input{
+	width: 186px;
+	height: 21px;
+	padding: 0 5px;
+}
+.ListContentR .btn{
+	margin-left: 165px;
+}
+.ListContentR .btn a{
+	display: block;
+	width: 80px;
+	height: 30px;
+	float: left;
+	background: url(../images/btn02.png) no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+.ListContentR .btn a:hover{
+	background: url(../images/btn02_hover.png) no-repeat;
+	background-size: 100% 100%;
+}
+.ListContentR ul.inputItem li select{
+	width: 198px;
+	height: 23px;
+}
+.ListContentR ul.inputItem>li>span{
+	display: inline-block;
+	text-align: start;
+	width: 200px;
+	text-indent: 0;
+}
+.ListContentR ul.zhmm li:first-of-type input{
+	margin: 0 5px 0 10px;
+	vertical-align: middle;
+}
+.ListContentR ul.zhmm li:last-of-type{
+	width: 50%;
+	text-align: end;
+}
+.ListContentR ul.zhmm li:last-of-type input{
+	width: 186px;
+	height: 21px;
+	padding: 0 5px;
+}
+.hide{
+	display: none;
+}
+
+/* register用户注册 */
+.register{
+	background: #062545;
+	margin-top: 2px;
+	overflow: hidden;
+}
+.register>img{
+	margin: 20px auto 25px;
+}
+.register ul{
+	width: 600px;
+	text-align: end;
+	font-size: 14px;
+	line-height: 31px;
+	color: #fff;
+}
+.register ul li{
+	margin-bottom: 9px;
+	line-height: 31px;
+}
+.register ul li input[type=text]{
+	width: 175px;
+	height: 31px;
+	padding: 0 5px;
+	border: none;
+	background: url(../images/reg_input.png) no-repeat;
+	background-size: 100%;
+	color: #fff;
+}
+.register ul li .rad{
+	text-align: start;
+	display: inline-block;
+	width: 185px;
+	height: 31px;
+}
+.rad input[type=radio]{
+	vertical-align: middle;
+	margin-left: 30px;
+	margin-right: 9px;
+}
+.register ul li:nth-last-of-type(1) input{
+	float: right;
+	width: 90px;
+	background: url(../images/reg_input.png) no-repeat;
+	background-size: 100% 100%;
+}
+.register ul li:nth-last-of-type(1) img{
+	float: right;
+	display: inline-block;
+	width: 74px;
+	height: 27px;
+	margin-left: 10px;
+	margin-top: 2px;
+}
+.reg-btn{
+	width: 330px;
+	height: 130px;
+	background: url(../images/reg_frame.png) top left no-repeat;
+	margin-left: 290px;
+	text-align: end;
+}
+.reg-btn a{
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+	margin-top: 15px;
+}
+.reg-btn a:nth-of-type(1){
+	background: url(../images/reg_btn01.png) no-repeat;
+	background-size: 100%;
+}
+.reg-btn a:nth-of-type(1):hover{
+	background: url(../images/reg_btn01_hover.png) no-repeat;
+	background-size: 100%;
+}
+.reg-btn a:nth-last-of-type(1){
+	background: url(../images/reg_btn02.png) no-repeat;
+	background-size: 100%;
+}
+.reg-btn a:nth-last-of-type(1):hover{
+	background: url(../images/reg_btn02_hover.png) no-repeat;
+	background-size: 100%;
+}
+
+/* 登录login */
+#login-wrapper{
+	width: 100%;
+	height: 499px;
+	background: url(../images/login_bar.jpg) no-repeat;
+	background-size: auto 100%;
+}
+#login-wrapper .login{
+	width: 389px;
+	height: 413px;
+	background: url(../images/login_bg.png) no-repeat;
+	margin-top: 44px;
+	margin-left: 872px;
+	padding: 105px 94px 0 71px;
+	box-sizing: border-box;
+	font-size: 12px;
+	color: #fff;
+	line-height: 26px;
+}
+#login-wrapper .login input{
+	display: block;
+	width: 208px;
+	height: 30px;
+	line-height: 30px;
+	border: none;
+	padding: 0 5px;
+	background: #000030;
+	color: #fff;
+	margin-left: 1px;
+	margin-bottom: 15px;
+}
+#login-wrapper .login .login-btn{
+	display: block;
+	width: 223px;
+	height: 46px;
+	background: url(../images/login.png) no-repeat;
+	margin-left: 1px;
+	margin-top: 20px;
+	transition: 0.5s;
+}
+#login-wrapper .login .login-btn:hover{
+	background: url(../images/login_hover.png) no-repeat;
+}
+#login-wrapper .login .shortcut{
+	float: left;
+	display: block;
+	width: 88px;
+	height: 14px;
+	line-height: 14px;
+	font-size: 13px;
+	margin-top: 23px;
+	
+}
+#login-wrapper .login .shortcut img{
+	display: inline-block;
+	margin-left: 2px;
+	margin-right: 1px;
+}
+
+/* gamesDetails 游戏详情*/
+.gamesDetails{
+	padding-left: 29px;
+	padding-right: 30px;
+	box-sizing: border-box;
+}
+.gamesDetails h3{
+	width: 123px;
+	height: 33px;
+	margin: 0 auto;
+	font-size: 14px;
+	line-height: 24px;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	background: url(../images/game_btn01.png) no-repeat;
+	background-size: 100% 100%;
+}
+.gamesDetails img{
+	width: 433px;
+	height: 298px;
+	margin: 10px auto 14px;
+}
+.gamesDetails .gamesDetails-title{
+	width: 939px;
+	height: 42px;
+	background: url(../images/game_bar.png) no-repeat;
+	font-size: 15px;
+	color: #fff;
+	text-indent: 20px;
+	line-height: 36px;
+}
+.gamesDetails p{
+	margin: 7px 13px 8px;
+	font-size: 13px;
+	color: #fff;
+	line-height: 22px;
+	text-indent: 2em;
+}
+
+/* recharge充值中心 */
+.rechargeList>li>span{
+	color: #f2cf93;
+}
+/* newDetail新闻中心 */
+.newDetailShow .gameTime{
+	width: 660px;
+	height: 30px;
+	border-bottom: 2px solid #062545;
+	box-sizing: border-box;
+	margin-top: 21px;
+	margin-left: 10px;
+	font-size: 14px;
+	line-height: 28px;
+	color: #fff;
+	text-align: end;
+}
+.newDetailShow>p{
+	font-size: 14px;
+	line-height: 24px;
+	color: #fff;
+	margin-left: 9px;
+	margin-top: 14px;
+	margin-right: 29px;
+	margin-bottom: 34px;
+	text-indent: 2em;
+}
+
+/* help 帮助中心 */
+.help table{
+	width: 680px;
+	height: 186px;
+	margin-top: 15px;
+	border: 1px solid #fff;
+	border-bottom: 1px solid #2659b0;
+	box-sizing: border-box;
+}
+.help table tr{
+	background: #fff;
+}
+.help table tr:hover{
+	background: #d3cdcd;
+}
+.help table tr th:nth-of-type(1){
+	border-left:none;
+}
+.help table tr th{
+	width: 100px;
+	height: 30px;
+	background: #2659b0;
+	font-size: 14px;
+	color: #fff;
+	line-height: 30px;
+	text-align: center;
+	border-left: 1px solid #fff;
+}
+.help table tr td{
+	width: 100px;
+	height: 31px;
+	font-size: 12px;
+	color: #000;
+	line-height: 30px;
+	text-align: center;
+	border-bottom: 1px solid #2659b0;
+	box-sizing: border-box;
+}
+.help table tr td:nth-of-type(4) p{
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 280px;
+}
+.help table tr:nth-last-of-type(1) td{
+	border-bottom: none;
+}
+.help table tr td a{
+	color: #00e;
+}
+.help table tr td a:hover{
+	text-decoration: underline;
+}
+.help .helpInput{
+	margin-left: 99px;
+	font-size: 14px;
+	color: #fff;
+}
+.helpInput div{
+	margin-top: 14px;
+}
+
+.helpInput div input{
+	height: 23px;
+	border: 1px solid #a9a9a9;
+	box-sizing: border-box;
+}
+.helpInput .helpInputName input{
+	width: 200px;
+}
+.helpInput .helpInputTheme input{
+	width: 400px;
+}
+.helpInput .helpInputContent{
+	height: 77px;
+	
+}
+.helpInput .helpInputContent span{
+	display: inline-block;
+	height: 74px;
+	line-height: 74px;
+	float: left;
+}
+
+.helpInput .helpInputContent textarea{
+	width: 400px;
+	height: 77px;
+	border: 1px solid #a9a9a9;
+	box-sizing: border-box;
+}
+
+.help>.btn{
+	margin-top: 14px;
+}
+
+/* helpDetailShow帮助中心详情 */
+.helpDetailShow h5{
+	font-size: 16px;
+	line-height: 16px;
+	margin-top: 19px;
+	font-weight: bold;
+	color: #fff;
+	text-align: center;
+}
+.helpDetailShow .gameTime{
+	width: 660px;
+	height: 30px;
+	border-bottom: 2px solid #062545;
+	box-sizing: border-box;
+	margin-top: 18px;
+	margin-left: 10px;
+	font-size: 14px;
+	line-height: 28px;
+	color: #fff;
+	text-align: end;
+}
+.helpDetailShow p{
+	margin-top: 8px;
+	margin-left: 9px;
+	margin-right: 22px;
+	font-size: 15px;
+	line-height: 25px;
+	color: #fff;
+}
+.helpDetailShow .reply {
+	height: 75px;
+	font-size: 13px;
+	line-height: 25px;
+	color: #2659b0;
+	margin-top: 14px;
+	margin-bottom: 9px;
+}
+.helpDetailShow .reply>span{
+	display: block;
+	width: 65px;
+	margin-left: 9px;
+	float: left;
+}
+.helpDetailShow .reply>div{
+	margin-left: 21px;
+	width: 574px;
+	float: left;
+}
